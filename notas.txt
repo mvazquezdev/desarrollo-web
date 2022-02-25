@@ -1,0 +1,13 @@
+git stattus
+git add 
+git commit -m "Otra modificación"
+git  push
+browser-sync start --server --directory --files "*"
+
+Site 
+https://github.com/mvazquezdev/desarrollo-web.git
+
+Recursos del curso
+https://github.com/jhu-ep-coursera/fullstack-course4
+
+www.caniuse.com
