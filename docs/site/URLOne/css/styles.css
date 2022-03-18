@@ -1,11 +1,11 @@
 body{
     font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
+    color: rgb(26, 89, 224);
+    background-color: #d4d4f8;
     font-family: 'Oxygen', sans-serif;
 }
 #header-nav{
-    background-color: skyblue;
+    background-color: rgb(200, 233, 243);
     border-radius: 0;
     border: 0;
 }
@@ -13,20 +13,21 @@ body{
     background: url("../images/mkd.jpg") no-repeat; 
     width: 150px;
     height: 150px;
-    margin: 10px 15px 10px 0;
+    margin: 5px 15px 15px 10px;
+    padding-left: 10px;
 }
 
 .navbar-brand{
     padding-top: 25px;
 }
 
-.navbar-brand h1 {
+.navbar-brand h1 { /*Marketing Digital*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #557c3e;
+    color: #720505;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1 1px 1px #222;
+    text-shadow: 2px 2px 2px 2px #222;
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
@@ -34,15 +35,99 @@ body{
 
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
+    background-color: rgb(63, 22, 247);
 }
 
-.navbar-brand p{
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
+.navbar-brand p{ /* Internet trabajando para ti*/
+    color: rgb(141, 3, 3);
+    text-transform:none;
+    font-size: .9em;
     margin-top: 15px;
 }
 
 .navbar-brand p span{
     vertical-align: middle;
+}
+
+/* END HEADER */
+/* HOME PAGE */
+
+#menu-tile, #case-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #d4d4f8;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #case-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #3F0C1F;
+}
+
+/* HOME PAGE */
+
+
+/************* Large divices only ***********/
+@media (min-width: 1200px) {
+    .jumbotron {
+        background: url("../images/mac1.jpg") no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }    
+     
+}
+/************* Medium divices only ***********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background: url("../images/mac22.jpg") no-repeat; 
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+    .jumbotron {
+        background: url("../images/mac2.jpg") no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }       
+}
+/************* Small divices only ***********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron {
+        background: url("../images/mac3.jpg") no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }          
+}
+/************* Extra small divices only ***********/
+@media (max-width: 767px) { 
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1{ /* Marketing Digital*/
+        padding-top: 10px;
+        font-size: 5vw;/* 1vw = 1% of vieport with*/
+    }
+    .navbar-brand p{ /* Internet trabajando para ti*/
+        font-size: .8em;
+        margin-top: 12px;
+    } 
+    .navbar-brand p img {
+        height: 20px;
+    }  
+}
+
+#collapsable-nav a{ /* formato de los iconos*/
+    font-size: 1.2em;
+    color:#720505
+}
+
+#collapsable-nav a span { /* formato del menu desplegable*/
+    font-size: 1.5em;
+    color:#720505;
+    margin-right: 5px;
 }
